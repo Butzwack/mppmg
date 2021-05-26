@@ -1,0 +1,6 @@
+-o "/mnt/v/p/new/%(uploader)s/%(title)s - %(uploader)s.%(ext)s"
+--add-metadata
+--format '399+251/399+bestaudio/303+251/303+bestaudio/299+251/299+bestaudio/248+251/248+bestaudio/137+251/137+bestaudio/bestvideo[height=1080]+251/bestvideo[height=1080]+bestaudio/bestvideo+bestaudio/best'
+-i
+--merge-output-format mkv
+--hls-use-mpegts
