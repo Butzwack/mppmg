@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp .config ~/
+cp -r .config ~/
 cat .bashrc >> ~/.bashrc
 cp {.bash_aliases,.vimrc} ~/
 mkdir git bin
