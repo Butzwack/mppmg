@@ -1,5 +1,6 @@
 #!/bin/bash
 
+chmod a+x ./package/*/*.sh
 cp -r .config ~/
 cat .bashrc >> ~/.bashrc
 cp {.bash_aliases,.vimrc} ~/
