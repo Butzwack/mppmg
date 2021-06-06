@@ -17,19 +17,23 @@ update()
 install()
 {
 	echo "Installing "$package
-	#if [ ls ~/git | grep $package = 1 ]; then
-	#	echo "already"
-	#else
+	if [ $package = "all" ]; then
+		cd ~/mppmg/package/install
+		for f in *.sh; do
+			echo "$f:"
+			bash "$f"
+		done
+	else
 		~/mppmg/package/install/$package.sh
-	#fi
+	fi
 	
 }
 
 command=$1
 package=$2
-if ( $command = "update" ); then
+if [ $command = "update" ]; then
 	$update
-elif ( $command = "install" ); then
+elif [ $command = "install" ]; then
 	$install
 fi
 
