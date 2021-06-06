@@ -31,9 +31,9 @@ install()
 
 command=$1
 package=$2
-if [ $command = "update" ]; then
+if ( $command = "update" ); then
 	$update
-elif [ $command = "install" ]; then
+elif ( $command = "install" ); then
 	$install
 fi
 
