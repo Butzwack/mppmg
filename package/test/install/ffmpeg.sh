@@ -4,23 +4,6 @@ rm ~/bin/ff*
 cd ~/git
 mkdir ffmpeg_sources
 
-#vpx
-cd ffmpeg_sources
-git -C libvpx pull 2> /dev/null || git clone --depth 1 https://chromium.googlesource.com/webm/libvpx.git
-cd libvpx
-PATH="$HOME/bin:$PATH" ./configure --prefix="$HOME/ffmpeg_build" --disable-examples --disable-unit-tests --enable-vp9-highbitdepth --as=yasm
-PATH="$HOME/bin:$PATH" make -j12
-make install
-
-#opus
-cd ~/git/ffmpeg_sources
-git -C opus pull 2> /dev/null || git clone --depth 1 https://github.com/xiph/opus.git
-cd opus
-./autogen.sh
-./configure --prefix="$HOME/ffmpeg_build" --disable-shared
-make -j12
-make install
-
 #aom
 cd ~/git/ffmpeg_sources
 git -C aom pull 2> /dev/null || git clone --depth 1 https://aomedia.googlesource.com/aom
