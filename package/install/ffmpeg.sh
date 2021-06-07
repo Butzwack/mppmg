@@ -9,7 +9,7 @@ cd ~/git/ffmpeg_sources
 git -C aom pull 2> /dev/null || git clone --depth 1 https://aomedia.googlesource.com/aom
 mkdir -p aom_build
 cd aom_build 
-PATH="$HOME/bin:$PATH" cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/ffmpeg_build" -DENABLE_SHARED=off -DENABLE_NASM=on ../aom 
+PATH="$HOME/bin:$PATH" cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/ffmpeg_build" -DENABLE_SHARED=off -DENABLE_TESTS=0 -DENABLE_DOCS=0 -DENABLE_NASM=on ../aom 
 PATH="$HOME/bin:$PATH" make -j12
 make install
 
@@ -25,9 +25,13 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
 	--extra-ldflags="-L$HOME/ffmpeg_build/lib" \
 	--extra-libs="-lpthread -lm" \
 	--bindir="$HOME/bin" \
+	--ld="g++" \
 	--arch=native \
 	--enable-gpl \
 	--enable-nonfree \
+	--enable-libx264 \
+	--enable-libx265 \
+	--enable-libvpx \
 	--enable-libaom \
 	--enable-libass \
 	--enable-libfdk-aac \
@@ -35,9 +39,6 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
 	--enable-libmp3lame \
 	--enable-libopus \
 	--enable-libvorbis \
-	--enable-libvpx \
-	--enable-libx264 \
-	--enable-libx265 \
 	--enable-libvmaf \
 	--enable-version3 
 PATH="$HOME/bin:$PATH" make -j12
