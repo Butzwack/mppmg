@@ -1,5 +1,4 @@
 aom-tools
-atom
 autoconf
 automake
 clang
@@ -7,10 +6,8 @@ doxygen
 ffmpeg
 gettext
 git-core
-github-desktop
 gnome-tweaks
 htop
-kdenlive
 libasound2-dev
 libass-dev
 libavcodec-dev
@@ -52,7 +49,6 @@ libxinerama-dev
 libxrandr-dev
 lutris
 mesa-utils
-mpv
 nasm
 neofetch
 opus-tools
@@ -65,7 +61,6 @@ scons
 steam-installer
 texinfo
 vim
-vlc
 vpx-tools
 wget
 wine
