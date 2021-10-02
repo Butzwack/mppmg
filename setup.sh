@@ -1,7 +1,7 @@
 #!/bin/bash
 
 timedatectl set-local-rtc 1 --adjust-system-clock
-git config pull.rebase false
+git config --global pull.rebase false
 chmod a+x ./package/*/*.sh
 cp -r .config/ /home/markus/
 cat .bashrc >> ~/.bashrc
