@@ -8,7 +8,6 @@ cat .bashrc >> ~/.bashrc
 cp {.bash_aliases,.vimrc} ~/
 cd ~
 mkdir git bin
-sudo add-apt-repository ppa:mozillateam/firefox-next
 sudo apt update
 sudo apt install $(cat ~/mppmg/package.list)
 flatpak install flathub $(cat ~/mppmg/flatpak.list)
