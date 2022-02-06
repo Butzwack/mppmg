@@ -1,6 +1,7 @@
 aom-tools
 autoconf
 automake
+cargo
 clang
 doxygen
 ffmpeg

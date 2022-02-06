@@ -23,5 +23,4 @@ fi
 }
 
 cd ~
-#export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-source "$HOME/.cargo/env"
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
