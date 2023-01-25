@@ -1,0 +1,4 @@
+[User permissions]
+Identity=unix-group:markus
+Action=org.corectrl.*
+ResultActive=yes
