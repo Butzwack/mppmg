@@ -1,8 +1,10 @@
 aom-tools
 autoconf
 automake
+build-essential
 cargo
 clang
+cmake
 doxygen
 ffmpeg
 gettext
@@ -21,10 +23,13 @@ libxinerama-dev
 libxrandr-dev
 lutris
 mesa-utils
+meson
 nasm
 neofetch
+ninja-build
 opus-tools
 p7zip-full
+pkg-config
 python3-opencv
 python3-pip
 python-is-python3
@@ -36,4 +41,5 @@ vim
 vpx-tools
 wget
 wine
+yasm
 zlib1g-dev
