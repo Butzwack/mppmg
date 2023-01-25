@@ -10,7 +10,7 @@ cmake
 corectrl
 default-jre
 doxygen
-exfat-utils
+exfatprogs
 ffmpeg
 gameconqueror
 gettext
@@ -29,11 +29,9 @@ libxcursor-dev
 libxi-dev
 libxinerama-dev
 libxrandr-dev
-lutris
 mediainfo-gui
 mesa-utils
 meson
-minecraft-launcher
 nasm
 neofetch
 ninja-build
