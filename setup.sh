@@ -6,6 +6,8 @@ chmod a+x ./package/*/*.sh
 cp -r .config/ /home/markus/
 cat .bashrc >> ~/.bashrc
 cp {.bash_aliases,.vimrc} ~/
+sudo add-apt-repository ppa:ernstp/mesarc
+sudo cp corectl /etc/apt/preferences.d/
 cd ~
 mkdir git bin
 sudo apt update
