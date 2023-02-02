@@ -12,6 +12,7 @@ default-jre
 doxygen
 exfatprogs
 ffmpeg
+gallery-dl
 gameconqueror
 gettext
 git-core
@@ -35,7 +36,6 @@ meson
 nasm
 neofetch
 ninja-build
-obs-studio
 opus-tools
 p7zip-full
 pkg-config
