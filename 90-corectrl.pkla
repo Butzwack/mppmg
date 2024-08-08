@@ -1,4 +1,0 @@
-[User permissions]
-Identity=unix-group:naomi
-Action=org.corectrl.*
-ResultActive=yes
