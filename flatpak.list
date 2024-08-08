@@ -5,7 +5,6 @@ com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
-com.play0ad.zeroad
 com.rawtherapee.RawTherapee
 com.usebottles.bottles
 com.vscodium.codium
@@ -22,8 +21,6 @@ no.mifi.losslesscut
 org.audacityteam.Audacity
 org.blender.Blender
 org.chromium.Chromium
-org.citra_emu.citra
-org.clementine_player.Clementine
 org.darktable.Darktable
 org.gimp.GIMP
 org.gnome.DejaDup
@@ -38,7 +35,4 @@ org.nomacs.ImageLounge
 org.openmw.OpenMW
 org.qbittorrent.qBittorrent
 org.raspberrypi.rpi-imager
-org.sauerbraten.Sauerbraten
-org.signal.Signal
 org.videolan.VLC
-org.xonotic.Xonotic
