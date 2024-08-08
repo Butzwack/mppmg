@@ -13,6 +13,7 @@ mkdir git bin
 sudo apt update
 sudo apt install $(cat ~/mppmg/package.list) -y
 flatpak install flathub $(cat ~/mppmg/flatpak.list) -y
+mkdir ~/.config/autostart
 cp /usr/share/applications/org.corectrl.CoreCtrl.desktop ~/.config/autostart/org.corectrl.CoreCtrl.desktop
 sudo cp 90-corectrl.rules /etc/polkit-1/rules.d/
 sudo kernelstub -a "amdgpu.ppfeaturemask=0xffffffff"
