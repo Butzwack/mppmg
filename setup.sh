@@ -5,7 +5,7 @@ git config --global pull.rebase false
 chmod a+x ./package/*/*.sh
 cp -r .config/ /home/naomi/
 cat .bashrc >> ~/.bashrc
-cp {.bash_aliases,.vimrc} ~/
+cp .bash_aliases ~/
 sudo add-apt-repository ppa:ernstp/mesarc
 sudo cp corectrl /etc/apt/preferences.d/
 cd ~
