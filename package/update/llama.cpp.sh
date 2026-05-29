@@ -16,7 +16,11 @@ echo "Pulling latest changes..."
 git pull
 
 echo "Reconfiguring build..."
-cmake -B build -DCMAKE_BUILD_TYPE=Release -DGGML_VULKAN=1
+HSA_OVERRIDE_GFX_VERSION=12.0.0 \
+HIPCXX="$(hipconfig -l)/clang" \
+HIP_PATH="$(hipconfig -R)" \
+HIP_DEVICE_LIB_PATH="$(dirname "$(find /usr -name oclc_abi_version_400.bc 2>/dev/null)")" \
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DGGML_VULKAN=1 -DGGML_HIP=ON -DGGML_HIP_ROCWMMA_FATTN=ON
 
 echo "Rebuilding..."
 cmake --build build --config Release -j
